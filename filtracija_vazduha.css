@@ -1,0 +1,11 @@
+.dust{
+    position: absolute;
+    width: 100px;
+}
+
+.primago {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+}

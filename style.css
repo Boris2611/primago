@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo_image {
+    width: 300px;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #888;
+    box-shadow: 0px 10px 10px 0px #999;
+}
+
+.image_div {
+    height: 400px;
+}
+
+.img {
+    width: 250px;
+    padding: 50px;
+
+    transition: 0.3s;
+}
+.img:hover {
+    width: 300px;
+    padding: 19px;
+}
+
+.dropdown_div {
+    font-size: 23px;
+    border: 1px solid #999;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 2px 0px #999;
+
+    transition: 0.3s;
+}
+.dropdown_div:hover {
+    background-color: rgb(236, 233, 233);
+}
+
+.dropdown_img {
+    float: right;
+    margin-top: -10px;
+    width: 50px;
+    transform: rotate(-90deg);
+}
+.dropdown_img:hover {
+    width: 70px;
+    margin: -20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
