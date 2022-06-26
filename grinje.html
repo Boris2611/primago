@@ -2,12 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="grinje.css">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
     <title>Grinje</title>
 </head>
 <body>
+
+    <p id="score">Rezultat: </p>
+    <p id="timer">Vreme: </p>
     
+    <div class="center">
+    <button id="start" onclick="play()">Start</button>
+</div>
+
+    <p id="startScore">Urgencija je KLJUC !<br>
+        <br>
+        Skupite sto vise grinja !<br>
+        Cuvajte se Koleta !
+        </p>
+
+
+    <div onclick="hit1()" id="virus1" class='a'><img class="virus" src="img/grinja.png"></div>
+    <div onclick="hit2()" id="virus2" class='b'><img class="virus" src="img/grinja.png"></div>
+    <div onclick="hit3()" id="virus3" class='c'><img class="virus" src="img/grinja.png"></div>
+    <div onclick="hit4()" id="virus4" class='d'><img class="virus" src="img/grinja.png"></div>
+    <div onclick="hit5()" id="virus5" class='e'><img class="virus" src="img/grinja.png"></div>
+    <div onclick="hit6()" id="virus6" class='f'><img class="virus" src="img/grinja.png"></div>
+    <div onclick="bomb()" id="bomb" class='g'><img class="virus" id="kole" src="img/kole.jpg"></div>
+    <div onclick="gift()" id="gift" class='gift'><img class="giftimg" src="img/img1.png"></div>
+    <div onclick="clock()" id="clock" class='clock'><img class="clockimg" src="img/clock.png"></div>
+
+
+    <p id="footer">Clean Air Solution</p>
+
+    <div class="center">
+    <div id="img1"><img id="pic1" src="photos/skull.png"><p class="imgtext"> &nbsp; Daća</p></div>
+    <div id="img2"><img id="pic2" src="photos/grave.png"><p class="imgtext">Mrtav'ladan</p></div>
+    <div id="img3"><img id="pic3" src="photos/ambulance.png"><p class="imgtext">Respriator ne gine!</p></div>
+    <div id="img4"><img id="pic4" src="photos/doctor.png"><p class="imgtext">Bravo Doktore!</p></div>
+    <div id="img5"><img id="pic5" src="photos/superman.png"><p class="imgtext">Asimptomatski!</p></div>
+    </div>
+
+    <script src="grinje.js"></script>
 </body>
 </html>

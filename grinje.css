@@ -1,0 +1,171 @@
+body {
+    margin:10px;
+    background-image:url("img/dusek.png");
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+}
+
+
+
+#score, #timer {
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    visibility: hidden;
+    display: inline;
+}
+
+#startScore {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px white solid;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px 10px #444;
+}
+
+button:hover {
+    background-color: rgb(1, 34, 1);
+}
+
+.a, .b, .c, .d, .e, .f, .g, .gift, .clock{
+    width: 100px;
+    height:100px;
+    position:fixed;
+    border-radius: 50%;
+    border: 2px solid rgba(6, 212, 6, 0.829);
+    cursor: pointer;
+    background-color: rgba(100, 134, 100, 0.37);
+    }
+
+.g {
+    background-color: rgba(255, 0, 0, 0.432);
+    border: 5px solid red;
+}
+
+#kole {
+    border-radius: 50%;
+}
+
+#gift {
+    border: 3px solid gold;
+    background-color: rgba(255, 217, 0, 0.452);
+    width: 50px;
+    height: 50px;
+}
+
+#clock {
+    border: 3px solid silver;
+    background-color: rgba(192, 192, 192, 0.473);
+    width: 50px;
+    height: 50px;
+}
+    
+.giftimg, .clockimg {
+    width: 50px;
+    height: 50px;
+}
+
+
+#virus1, #virus2, #virus3, #virus4, #virus5, #virus6, #bomb, #gift, #clock {
+    visibility: hidden;
+}
+
+
+    .virus {
+        width: 100px;
+    }
+
+    #footer {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.452);
+        border-radius: 10px;
+        font-size: 11px;
+        width: 50%;
+        float: right;
+    }
+
+
+    #img1, #img2, #img3, #img4, #img5, #img6 {
+        display: flex;
+        text-align: center;
+        margin-top: 50px;
+        position: absolute;
+        visibility: hidden;
+       
+    }
+
+    #img1 {
+        width: 100px;
+        height: 200px;
+    }
+
+   #img2 { 
+       height: 200px;
+       width: 100px;
+   }
+
+    #img3 {
+        padding: 20px;
+        height: 150px;    
+        width: 180px;  
+    }
+
+    #img4 {
+        width: 150px;
+        height: 200px;     
+    }
+
+    #img5 {
+        width: 180px;
+        height: 200px;
+    }
+
+ 
+#pic1 {
+    width: 200px;
+}
+
+#pic2 {
+    width: 150px;
+}
+
+#pic3 {
+    width: 250px;
+}
+
+#pic4 {
+    width: 150px;
+}
+
+#pic5 {
+    width: 200px;
+}
+
+
+.imgtext {
+    padding-top: 50px;
+    padding-left: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bolder;
+}
