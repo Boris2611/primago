@@ -1,53 +1,31 @@
-dragElement(document.getElementById("primago"));
 
-setInterval(timer, 200)
 
-function timer() {
-    let primago = document.getElementById("primago");
-    console.log(primago.offsetLeft)
+function hero() {
+    document.getElementById("hero_div").style.display = "block";
+
+
+    document.getElementById("paki").style.display = "none";
+    document.getElementById("bicko").style.display = "none";
+    document.getElementById("cera").style.display = "none";
+    document.getElementById("pedjo").style.display = "none";
 }
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos3 = 0
-  if (document.getElementById(elmnt.id + "header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-    
-    
-    
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos3 = e.clientX;
-
-    // set the element's new position:
-    
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
+function paki() {
+  document.getElementById("hero_div").style.display = "none";
+  document.getElementById("paki").style.display = "block";
 }
 
+function bicko() {
+  document.getElementById("hero_div").style.display = "none";
+  document.getElementById("bicko").style.display = "block";
+}
 
+function cera() {
+  document.getElementById("hero_div").style.display = "none";
+  document.getElementById("cera").style.display = "block";
+}
+
+function pedjo() {
+  document.getElementById("hero_div").style.display = "none";
+  document.getElementById("pedjo").style.display = "block";
+}
